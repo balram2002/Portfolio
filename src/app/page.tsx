@@ -32,7 +32,7 @@ export default function Home() {
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
-                  className="dark:bg-dark bg-dark text-black dark:text-light flex items-center space-x-2 sm:px-4 sm:text-base !z-10"
+                  className="dark:bg-dark bg-dark text-light dark:text-light flex items-center space-x-2 sm:px-4 sm:text-base !z-10"
                 >
                   Resume <LinkArrow className='w-6 ml-1' />
                 </HoverBorderGradient>

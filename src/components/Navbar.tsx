@@ -122,34 +122,34 @@ const Navbar = () => {
                     </nav>
 
                     <nav className='flex items-center justify-center flex-wrap mt-2'>
-                        <motion.a href='https://twitter.com' target={"_blank"}
+                        <motion.a href='https://twitter.com/BalramD42013703?t=rRs-EpG6nl6V5N0Ys8jcAA&s=09' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-3 sm:mx-1'
                         ><TwitterIcon className={''} />
                         </motion.a>
-                        <motion.a href='https://twitter.com' target={"_blank"}
+                        <motion.a href='https://github.com/balram2002' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 bg-light dark:bg-dark rounded-full sm:mx-1'
                         >
                             <GithubIcon className={''} />
                         </motion.a>
-                        <motion.a href='https://twitter.com' target={"_blank"}
+                        <motion.a href='https://www.linkedin.com/in/balram-dhakad-2a9110210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 sm:mx-1'
                         >
                             <LinkedInIcon className={''} />
                         </motion.a>
-                        <motion.a href='https://twitter.com' target={"_blank"}
+                        <motion.a href='https://in.pinterest.com/bdhakad886/' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 bg-light dark:bg-light rounded-full sm:mx-1'
                         >
                             <PinterestIcon className={''} />
                         </motion.a>
-                        <motion.a href='https://twitter.com' target={"_blank"}
+                        <motion.a href='https://dribbble.com/itopsBalram' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 sm:mx-1'
