@@ -25,7 +25,7 @@ const ContactPage = () => {
 
                     <div className='h-full flex items-center justify-center gap-[50px] sm:flex-col'>
                         <div className='flex-1 flex flex-col gap-[40px] sm:text-center sm:items-center'>
-                            <h1 className='text-[50px] leading-[50px] font-semibold'>Let's Work Together</h1>
+                            <h1 className='text-[50px] leading-[50px] font-semibold'>Let&apos;s Work Together</h1>
                             <div>
                                 <h2>Mail:</h2>
                                 <span className='font-light'>bdhakad886@gmail.com</span>
