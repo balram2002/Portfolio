@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import profilePic from '../../public/images/profile/developer-pic-1.png';
 import AnimatedText from "@/components/AnimatedText";
@@ -8,8 +10,14 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import HireMe from "@/components/HireMe";
 import { Spotlight } from './../components/ui/Spotlight';
 import { FlipWords } from './../components/ui/flip-words';
+import { TextGenerateEffect } from './../components/ui/TextGenerateEffect';
+import MagicButton from './../components/ui/MagicButton';
+import { FaLocationArrow } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
+
 
 export default function Home() {
+  const router = useRouter();
   const words = ["FullStack Developer", "Mobile Developer", "Graphic Designer"];
   return (
     <>
@@ -46,6 +54,29 @@ export default function Home() {
         </div>
         <HireMe />
       </div>
+
+
+
+      <div className="w-full dark:bg-dark bg-light  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
+        {/* Radial gradient for the container to give a faded look */}
+        <div className="absolute pointer-events-none inset-0 dark:bg-dark bg-light [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+        <div className="flex text-dark w-full p-32 py-10 pt-0 dark:text-light xl:p-24 lg:p-16 md:p-12 sm:p-8 sm:pt-0 md:pt-16">
+          <div className="w-full flex flex-col items-center justify-center p-4 gap-4 z-30" onClick={() => router.push('/about')} >
+            <TextGenerateEffect
+              className='text-center text-6xl sm:text-3xl xs:text-2xl'
+              words="Transforming Concepts into Seamless User Experiences"
+            />
+            <p className="text-center text-sm">Hi, I&apos;m Balram, a Web Developer based in Shivpuri.</p>
+            <span className="cursor-pointer z-20" onClick={() => router.push('/about')}>
+              <MagicButton title='See my work' icon={<FaLocationArrow />} position="right" otherClasses="gap-2" link={'about'} />
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+
       <Spotlight
         className="-top-40 left-40 md:left-60 md:-top-20"
         fill="white"

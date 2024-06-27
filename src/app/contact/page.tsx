@@ -8,8 +8,11 @@ const ContactPage = () => {
     const [name, setName] = useState<any>();
     const [email, setEmail] = useState<any>();
     const [message, setMessage] = useState<any>();
+    const [result, setresult] = useState<Record<string, string>>()
+    const [loading, setLoading] = useState<boolean>(false);
 
-    const handleChange = () => {
+    const handleSubmit = async () => {
+        setLoading(true);
 
     }
 
@@ -40,11 +43,11 @@ const ContactPage = () => {
                             </div>
                         </div>
                         <div className='flex flex-1 flex-col items-center justify-center gap-[20px] w-full '>
-                            <form className=' flex flex-col items-center justify-center gap-[20px] w-full'>
+                            <form className=' flex flex-col items-center justify-center gap-[20px] w-full' onSubmit={handleSubmit}>
                                 <input className='p-[20px] bg-transparent border border-solid border-light border-r-[5px] w-full' type="text" placeholder='Your Name' required onChange={(e) => setName(e.target.value)} />
                                 <input className='p-[20px] bg-transparent border border-solid border-light border-r-[5px] w-full' type="email" placeholder='Your Email' required onChange={(e) => setEmail(e.target.value)} />
                                 <textarea className='p-[20px] bg-transparent border border-solid border-light border-r-[5px] w-full' name="body" id="" rows={5} placeholder='Your Message' required onChange={(e) => setMessage(e.target.value)} />
-                                <button className='w-full text-dark py-[15px] border-none bg-dark font-bold dark:bg-light'>Contact Me</button>
+                                <button type='submit' className='w-full text-dark py-[15px] border-none bg-dark font-bold dark:bg-light'>Contact Me</button>
                             </form>
                         </div>
                     </div>

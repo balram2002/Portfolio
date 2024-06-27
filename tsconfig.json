@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/hooks/useThemeSwitch.js"
+    "src/components/hooks/useThemeSwitch.js",
+    "src/app/api/emails/route.js"
   ],
   "exclude": [
     "node_modules"
