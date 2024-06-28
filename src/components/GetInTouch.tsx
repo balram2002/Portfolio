@@ -5,7 +5,7 @@ import { Boxes } from "./ui/background-boxes";
 
 const GetInTouch = () => {
   return (
-    <div className="w-full pb-10 relative z-10" id="contact">
+    <div className="w-full pb-10 relative" id="contact">
       <Boxes />
       <div className="flex flex-col items-center">
         <h1 className="heading text-2xl font-bold text-dark dark:text-light text-center sm:text-1xl xs:text-base">

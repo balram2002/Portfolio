@@ -13,7 +13,7 @@ const ProjectItem = ({ type, title, img, link, github }: {
     return (
         <>
             <CardContainer className="inter-var shadow-2xl !py-2" containerClassName='!py-2'>
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-light/75 dark:bg-black/75 dark:border-white/55 border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border  ">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-light/75 dark:bg-black/75 dark:border-white/55 border-black/[0.1] w-auto sm:w-auto h-auto rounded-xl p-6 border  ">
                     <CardItem
                         translateZ="50"
                         className="text-2xl font-bold text-neutral-600 dark:text-white lg:text-2xl"

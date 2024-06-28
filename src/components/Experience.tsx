@@ -32,7 +32,7 @@ const Experience = () => {
     )
     return (
         <>
-            <h2 className='font-bold text-6xl mt-48 w-full text-center mb-10 md:text-4xl xs:text-3xl md:mb-8'>Experience</h2>
+            <h2 className='font-bold text-6xl mt-40 w-full text-center mb-10 md:text-6xl md:!mt-18 sm:mt-16 sm:mb-8 sm:text-5xl'>Experience</h2>
             <div className='w-full relative flex items-center justify-center'>
                 <div className='w-[75%] mx-auto relative lg:w-[90%] md:w-full' ref={ref}>
                     <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px] ' />

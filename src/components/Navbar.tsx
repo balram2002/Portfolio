@@ -48,13 +48,15 @@ const Navbar = () => {
     const [mode, setMode] = useThemeSwitch();
     const [isOpen, setIsOpen] = useState(false);
 
+    const pathname = usePathname();
+
     const handleclick = () => {
         setIsOpen(!isOpen);
     }
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center relative justify-between dark:text-light z-10 lg:px-16 sm:px-6 md:px-12'>
 
-            <button className='items-center justify-center flex-col hidden lg:flex' onClick={() => handleclick()}>
+            <button className={`items-center justify-center flex-col hidden lg:flex ${pathname === '/articles' && 'sm:hidden'}`} onClick={() => handleclick()}>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -110,8 +112,8 @@ const Navbar = () => {
             </div>
 
             {isOpen === true &&
-                <motion.div className={`min-w-[70vw] flex flex-col justify-between items-center fixed top-2/4 left-2/4 -!translate-x-1/2 -!translate-y-1/2 !z-50 bg-dark/90 dark:bg-light/85 rounded-lg backdrop-blur-md py-20`}
-                    initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%", zIndex: 999999 }}
+                <motion.div className={`!min-w-[70vw] flex flex-col justify-between items-center !fixed !top-[50%] !left-[50%] transform !translate-x-[-50%] !translate-y-[-50%] z-50 !bg-dark/90 dark:!bg-light/85 rounded-lg backdrop-blur-md py-20`}
+                    initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                     animate={{ scale: 1, opacity: 1 }}
                 >
                     <nav className='flex items-center flex-col justify-center'>

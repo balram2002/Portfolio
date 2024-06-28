@@ -22,7 +22,7 @@ const AboutPage = () => {
                 <div className='flex justify-center items-center p-32 pt-10 flex-col xl:p-24 lg:p-16 md:p-12 sm:p-8'>
                     <AnimatedText text='Passion Fuels Purpose!' className='text-[60px] mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-8' />
                     <div className='grid w-full grid-cols-8 gap-8 sm:gap-4'>
-                        <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 xs:mt-2 xs:mb-2 sm:mt-2 sm:mb-2 sm:pt-2 xs:pt-2'>
+                        <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 xs:mt-2 xs:mb-2 sm:mt-6 sm:mb-2 sm:pt-2 xs:pt-2'>
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">About Me</h2>
                             <p className='font-medium '>Hi, I&apos;m <span className='text-primary dark:text-primaryDark'>Balram Dhakad</span>, a web developer and Graphic designer with a passion for creating beautiful, functional,
                                 and user-centered digital experiences. With 2 years of experience in the field. I am always looking for
@@ -37,7 +37,7 @@ const AboutPage = () => {
                             <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light' />
                             <Image src={profilepic} alt='bd' className='w-full h-full rounded-2xl' priority sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw" />
                         </div>
-                        <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+                        <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 sm:mt-2">
                             <div className='flex flex-col items-end justify-center xl:items-center'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={3} /> +</span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied Clients</h2>

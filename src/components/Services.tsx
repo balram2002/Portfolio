@@ -36,7 +36,7 @@ export const workExperience = [
 const Services = () => {
   return (
     <div className="py-8 pb-2 w-full">
-      <h1 className="heading flex items-center justify-center text-center w-full text-dark dark:text-light font-medium text-5xl">
+      <h1 className="flex items-center justify-center text-center w-full text-dark dark:text-light font-medium text-5xl">
         My Services
       </h1>
 
