@@ -28,7 +28,7 @@ const FeaturedProjectItem = ({ type, title, summary, img, link, github }: {
                         <HoverBorderGradient
                             containerClassName="rounded-full ml-4 !z-10"
                             as="button"
-                            className="dark:bg-dark bg-dark text-black dark:text-light flex items-center space-x-2 sm:px-4 sm:text-base !z-10"
+                            className="dark:bg-dark bg-dark text-gray-200 dark:text-light flex items-center space-x-2 sm:px-4 sm:text-base !z-10"
                         >
                             Visit Project
                         </HoverBorderGradient>

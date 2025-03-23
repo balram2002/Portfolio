@@ -124,7 +124,7 @@ const Navbar = () => {
                     </nav>
 
                     <nav className='flex items-center justify-center flex-wrap mt-2'>
-                        <motion.a href='https://twitter.com/BalramD42013703?t=rRs-EpG6nl6V5N0Ys8jcAA&s=09' target={"_blank"}
+                        <motion.a href='https://twitter.com/BalramD42013703' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-3 sm:mx-1'
@@ -137,7 +137,7 @@ const Navbar = () => {
                         >
                             <GithubIcon className={''} />
                         </motion.a>
-                        <motion.a href='https://www.linkedin.com/in/balram-dhakad-2a9110210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target={"_blank"}
+                        <motion.a href='https://www.linkedin.com/in/balram-dhakad-2a9110210' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 sm:mx-1'

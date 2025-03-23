@@ -36,7 +36,7 @@ export default function Home() {
             <p className="my-4 font-medium text-[12px] w-full text-left mb-3 md:text-sm sm:text-xs sm:text-center">As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
               Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
             <div className="flex items-center self-start mt-6 lg:self-center">
-              <Link href={'https://drive.google.com/file/d/17FQw9H7c3lTr6rHiuLrL5bnFIF8jMNI3/view?usp=sharing'} target={"_blank"} className="flex items-center" download={true}>
+              <Link href={'https://drive.google.com/file/d/1qRzW4W9z_l65g8j13HFfm-2O0KHyvdXi/view?usp=sharing'} target={"_blank"} className="flex items-center" download={true}>
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
@@ -68,7 +68,7 @@ export default function Home() {
               words="Transforming Concepts into Seamless User Experiences"
             />
             <p className="text-center text-sm">Hi, I&apos;m Balram, a Web Developer based in Shivpuri.</p>
-            <span className="cursor-pointer z-20" onClick={() => router.push('/about')}>
+            <span className="cursor-pointer z-20" onClick={() => router.push('/projects')}>
               <MagicButton title='See my work' icon={<FaLocationArrow />} position="right" otherClasses="gap-2" link={'about'} />
             </span>
           </div>
