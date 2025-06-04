@@ -36,7 +36,7 @@ export default function Home() {
             <p className="my-4 font-medium text-[12px] w-full text-left mb-3 md:text-sm sm:text-xs sm:text-center">As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
               Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
             <div className="flex items-center self-start mt-6 lg:self-center">
-              <Link href={'https://drive.google.com/file/d/1DWwGaHRIvPJ0agtjJ4vkZ36eJSs86x3n/view?usp=sharing'} target={"_blank"} className="flex items-center" download={true}>
+              <Link href={'https://drive.google.com/file/d/1Is5PnwCAQjO7LF5PJAd-ILBpQkdTGPME/view?usp=sharing'} target={"_blank"} className="flex items-center" download={true}>
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
