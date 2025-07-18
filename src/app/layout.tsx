@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import TransitionPageEffect from './../components/TransitionPageEffect';
-
+import { Analytics } from "@vercel/analytics/next";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-mont"
@@ -30,7 +30,10 @@ export default function RootLayout({ children }: {
         </Script>
       </head>
       <body className={`${montserrat.variable} font-mont bg-light dark:bg-dark`}>
-        <TransitionPageEffect>{children}</TransitionPageEffect>
+        <TransitionPageEffect>
+          {children}
+          <Analytics />
+        </TransitionPageEffect>
       </body>
     </html>
   );
