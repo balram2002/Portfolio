@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
-import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from './icons';
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './icons';
 import { motion } from 'framer-motion';
 import useThemeSwitch from './hooks/useThemeSwitch';
 import { useRouter } from 'next/navigation';
@@ -71,12 +71,12 @@ const Navbar = () => {
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap gap-5'>
-                    <motion.a href='https://twitter.com/BalramD42013703?t=rRs-EpG6nl6V5N0Ys8jcAA&s=09' target={"_blank"}
+                    {/* <motion.a href='https://twitter.com/BalramD42013703?t=rRs-EpG6nl6V5N0Ys8jcAA&s=09' target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mr-1'
                     ><TwitterIcon className={''} />
-                    </motion.a>
+                    </motion.a> */}
                     <motion.a href='https://github.com/balram2002' target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -91,20 +91,20 @@ const Navbar = () => {
                     >
                         <LinkedInIcon className={''} />
                     </motion.a>
-                    <motion.a href='https://in.pinterest.com/bdhakad886/' target={"_blank"}
+                    {/* <motion.a href='https://in.pinterest.com/bdhakad886/' target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mr-1'
                     >
                         <PinterestIcon className={''} />
-                    </motion.a>
-                    <motion.a href='https://dribbble.com/itopsBalram' target={"_blank"}
+                    </motion.a> */}
+                    {/* <motion.a href='https://dribbble.com/itopsBalram' target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mr-1'
                     >
                         <DribbbleIcon className={''} />
-                    </motion.a>
+                    </motion.a> */}
                     <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className={`flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
                         {mode === "dark" ? <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark'} />}
                     </button>
@@ -124,12 +124,12 @@ const Navbar = () => {
                     </nav>
 
                     <nav className='flex items-center justify-center flex-wrap mt-2'>
-                        <motion.a href='https://twitter.com/BalramD42013703' target={"_blank"}
+                        {/* <motion.a href='https://twitter.com/BalramD42013703' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-3 sm:mx-1'
                         ><TwitterIcon className={''} />
-                        </motion.a>
+                        </motion.a> */}
                         <motion.a href='https://github.com/balram2002' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
@@ -144,20 +144,20 @@ const Navbar = () => {
                         >
                             <LinkedInIcon className={''} />
                         </motion.a>
-                        <motion.a href='https://in.pinterest.com/bdhakad886/' target={"_blank"}
+                        {/* <motion.a href='https://in.pinterest.com/bdhakad886/' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 bg-light dark:bg-light rounded-full sm:mx-1'
                         >
                             <PinterestIcon className={''} />
-                        </motion.a>
-                        <motion.a href='https://dribbble.com/itopsBalram' target={"_blank"}
+                        </motion.a> */}
+                        {/* <motion.a href='https://dribbble.com/itopsBalram' target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className='w-6 mr-1 sm:mx-1'
                         >
                             <DribbbleIcon className={''} />
-                        </motion.a>
+                        </motion.a> */}
                         <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className={`flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
                             {mode === "dark" ? <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark'} />}
                         </button>

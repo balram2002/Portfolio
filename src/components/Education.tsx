@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useRef } from 'react'
 import { useScroll, motion } from 'framer-motion'
 import LiIcon from './LiIcon';
@@ -37,10 +39,9 @@ const Education = () => {
                 <div className='w-[75%] mx-auto relative lg:w-[90%] md:w-full' ref={ref}>
                     <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]' />
                     <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2 md:mb-[158px]'>
+                          <Details type={'Master Of Computer & Applications'} place={'SCSIT, DAVV Indore, M.P'} time={'2024-2026'} info={`Pursuing a Master's degree in Computer Applications with a focus on software development and data science.`} />
                         <Details type={'Bachelor Of Computer & Applications'} place={'Medicaps University, Indore, M.P'} time={'2021-2024'} info={`Relevant courses included Data Structures and DBMS, Computer Systems, Computer Networking, and Artificial 
 Intelligence.`} />
-                        {/* <Details type={'Master Of Computer & Applications'} place={'Stanford University'} time={'2020-2022'} info={`Completed a master's project on deep learning, developing a new neural network architecture for natural 
-language understanding.`} /> */}
                         <Details type={'Google IT Support'} place={'Coursera'} time={'2022'} info={`Coursera Professional Certificate that includes 5 internal courses Technical Support Fundamentals, The Bits And Bytes Of Computer Networking, Operating Systems, System Administration and IT Infrastructure Services, IT Security.`} />
                         <Details type={'Cyber Security and IoTs'} place={'Coursera'} time={'2022'} info={`Coursera Certificate that taught me best security practices to handle cyber attacks and internet of things.`} />
 

@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 
 import AnimatedText from '@/components/AnimatedText'
@@ -10,6 +8,11 @@ import Experience from './../../components/Experience';
 import Education from '../../components/Education';
 import AnimatedNumbers from './../../components/AnimatedNumbers';
 import Head from 'next/head';
+
+export const metadata = {
+    title: "Portfolio | About Page",
+    description: "Balram Dhakad Portfolio | About Page",
+};
 
 const AboutPage = () => {
     return (
@@ -39,15 +42,15 @@ const AboutPage = () => {
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 sm:mt-2">
                             <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={7} /> +</span>
+                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={9} /> +</span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied Clients</h2>
                             </div>
                             <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={25} /> +</span>
+                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={32} /> +</span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
                             </div>
                             <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={3} /> +</span>
+                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNumbers value={4} /> +</span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Years Of Experience</h2>
                             </div>
                         </div>
